@@ -1,0 +1,148 @@
+-- pls change the id for this
+local image = "rbxassetid://13492929224"
+
+-- Template By lolbad
+-- discord.gg/ykcEA9fYyE
+-- join discord for more template :)
+
+--[[
+███████╗██╗░░██╗███████╗░█████╗░██╗░░░██╗████████╗░█████╗░██████╗░
+██╔════╝╚██╗██╔╝██╔════╝██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗██╔══██╗
+█████╗░░░╚███╔╝░█████╗░░██║░░╚═╝██║░░░██║░░░██║░░░██║░░██║██████╔╝
+██╔══╝░░░██╔██╗░██╔══╝░░██║░░██╗██║░░░██║░░░██║░░░██║░░██║██╔══██╗
+███████╗██╔╝╚██╗███████╗╚█████╔╝╚██████╔╝░░░██║░░░╚█████╔╝██║░░██║
+╚══════╝╚═╝░░╚═╝╚══════╝░╚════╝░░╚═════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝]]
+
+-- Instances:
+ 
+local Template = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Bar = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageButton = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+Template.Name = "Template"
+Template.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Template.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Template
+Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame.Position = UDim2.new(0.29400748, 0, 0.315649867, 0)
+Frame.Size = UDim2.new(0.411048681, 0, 0.367374003, 0)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TextBox.Position = UDim2.new(0.168564916, 0, 0.0288808662, 0)
+TextBox.Size = UDim2.new(0.810933948, 0, 0.826714814, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "-- script"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = TextBox
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Frame
+
+Bar.Name = "Bar"
+Bar.Parent = Frame
+Bar.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Bar.Position = UDim2.new(0.136832058, 0, 0.00157038821, 0)
+Bar.Size = UDim2.new(0.0136674261, 0, 1, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 9)
+UICorner_3.Parent = Bar
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+Execute.Position = UDim2.new(0.168564916, 0, 0.888086617, 0)
+Execute.Size = UDim2.new(0.373576313, 0, 0.0866426006, 0)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute </>"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextScaled = true
+Execute.TextSize = 20.000
+Execute.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = Frame
+Clear.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+Clear.Position = UDim2.new(0.60592252, 0, 0.888086617, 0)
+Clear.Size = UDim2.new(0.373576313, 0, 0.0866426006, 0)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextScaled = true
+Clear.TextSize = 20.000
+Clear.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = Clear
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.00455580885, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0.132118449, 0, 0.209386274, 0)
+ImageLabel.Image = image
+
+ImageButton.Parent = Template
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.Position = UDim2.new(0.475655407, 0, 0.0928381979, 0)
+ImageButton.Size = UDim2.new(0.0468164794, 0, 0.0663129985, 0)
+ImageButton.Image = image
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = ImageButton
+
+-- Scripts:
+
+local function HHOBG_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.TextBox.Text)()
+	end)
+end
+coroutine.wrap(HHOBG_fake_script)()
+local function WSVRYJ_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(WSVRYJ_fake_script)()
+local function OUQVESK_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Frame.Visible == true then
+			script.Parent.Parent.Frame.Visible = false
+		else
+			script.Parent.Parent.Frame.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(OUQVESK_fake_script)()
